@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bank Details</title>
+</head>
+<body>
+	<div align="center">
+	<h2 style="color:Powderblue;">Bank Details</h2>
+		<form name="BankDetails" action="#" method="post">
+			<table bgcolor="Slateblue">
+				<tr>
+					<td>Bank Name:</td>
+					<td><select name="bankName">
+							<option name="bankName" value="State Bank of India">State Bank of India</option>
+							<option name="bankName" value="Punjab National Bank">Punjab National Bank</option>
+							<option name="bankName" value="HDFC Bank">HDFC Bank</option>
+							<option name="bankName" value="ICICI Bank">ICICI Bank</option>
+							<option name="bankName" value="Axis Bank">Axis Bank</option>
+							<option name="bankName" value="Standard Chartered">Standard Chartered</option>
+							<option name="bankName" value="Citi Bank">Citi Bank</option>
+							<option name="bankName" value="Central Bank of India">Central Bank of India</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Account Number:</td>
+					<td><input type="number" name="accountNumber" minlength="10"maxlength="20" required></td>
+				</tr>
+				<tr>
+					<td>Bank IFSC Code:</td>
+					<td><input type="text" name="ifscCode" pattern="([A-Z]{4}[A-Z0-9]{7})" placeholder="ABCDE123456" required></td>
+				</tr>
+			</table>
+			<br>
+			<button type="submit" name="next">Next</button>
+			<button type="reset" name="reset">Reset</button>
+		</form>
+	</div>
+</body>
+</html>
